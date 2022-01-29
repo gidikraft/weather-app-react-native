@@ -6,8 +6,8 @@ export default function UnitsPicker({ unitSystem, setunitSystem }) {
     return (
         <View style={styles.unitSystem} >
             <Picker selectedValue={unitSystem} onValueChange={(item) => setunitSystem(item)} mode='dropdown'>
-                <Picker.Item label='°C' value='metric' />
-                <Picker.Item label='°F' value='imperial' />
+                <Picker.Item color='#32a852' label='°C' value='metric' />
+                <Picker.Item color='#9e32a8' label='°F' value='imperial' />
             </Picker>
         </View>
     )
